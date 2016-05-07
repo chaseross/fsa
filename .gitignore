@@ -1,5 +1,5 @@
 *
-!code/
-!output/
+!code/*
+!output/*
 !.gitignore
 !*/

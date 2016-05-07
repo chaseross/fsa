@@ -1,0 +1,231 @@
+\documentclass[8pt]{beamer}
+%\usetheme{CambridgeUS}
+%\usecolortheme{dove}
+\usecolortheme{albatross}
+\setbeamertemplate{caption}[numbered]
+\usepackage{graphicx}
+\setbeamertemplate{footline}[frame number]
+\setbeamerfont{caption}{size=\scriptsize}
+\usepackage{float}
+
+%Global Background must be put in preamble
+
+
+
+\usepackage{moresize}
+\pdfmapfile{+sansmathaccent.map}
+
+\usepackage{tikz}
+\usepackage{pgfpages} 
+\setbeamertemplate{background canvas}{
+    \tikz \draw (current page.north west) rectangle (current page.south east);
+        }
+\pgfpagesuselayout{2 on 1}[letterpaper,border shrink=5mm]
+\beamertemplatenavigationsymbolsempty
+\usepackage{caption}
+%\setbeameroption{show notes} %un-comment to see the notes
+\setbeamerfont{note page}{size=\ssmall}
+\graphicspath{{../input/}}
+\usebackgroundtemplate%
+{%
+    \includegraphics[width=\paperwidth,height=\paperheight]{yalebackground.png}%
+}
+\usepackage[outdir=./]{epstopdf}
+
+
+\begin{document}
+
+\DeclareGraphicsExtensions{.eps}
+
+\title{2008 Financial Services Authority Stress Tests}
+%\author{Chase Ross}
+\date{March 1, 2016}
+
+%\beamersetaveragebackground{black}
+%\begin{frame}
+%\frametitle{}
+
+%\end{frame}
+%\beamersetaveragebackground{white}
+
+%\frame{\titlepage}
+
+%\frame{\frametitle{Table of contents}\tableofcontents}
+
+\frame{\frametitle{2008/9 FSA Stress Tests: Background}
+\begin{columns}[T] % align columns
+\begin{column}{.48\textwidth}
+
+\textbf{Banking Recapitalization Package}
+
+\vspace{2mm}
+
+10/8/08: Tripartite authorities (Treasury, BoE, FSA) unveiled 3 part package:
+
+\begin{enumerate}
+\item Provide sufficient liquidity 
+\item Recapitalize banks should they need it
+\item Guarantee certain new wholesale debt of certain banks
+\end{enumerate}
+
+Within Tripartite structure, FSA responsible for determining the appropriate capital levels for each involved institution, considering:
+
+\begin{enumerate}
+\item That the amount of capital would sustain confidence in that institution, and
+\item Ensure the institution would have enough capital in excess of minimum requirements to both absorb losses in a recession and also to continue lending on normal commercial criteria
+\end{enumerate}
+
+\end{column}%
+\hfill%
+\begin{column}{.48\textwidth}
+
+\textbf{Initial Stress Test Statement}
+
+\vspace{2mm}
+
+11/14/08: FSA releases vague methodology, \textbf{essentially declining to publicly describe specifics of the test or when the results would be announced (if at all)}. 
+
+\vspace{2mm}
+
+What they did say:
+
+\begin{itemize}
+\item ``[T]he process included utilisation[sic] of a stress test based on some standard assumptions but with weightings tailored to the specific institutions'' 
+\item Targeted 8\% Tier 1 Capital and Core Tier 1 Capital of at least 4\% in the stressed scenario
+\item Noted this method did not set new minimum capital ratios
+\end{itemize}
+
+Useful to compare to U.S. SCAP stress tests, which were announced 3 months later. SCAP disclosed much more detail in methodology (discussed later).
+
+\end{column}%
+\end{columns}
+
+}
+
+\frame{\frametitle{January-April 2009: Basically No Disclosures}
+\begin{columns}[T] % align columns
+\begin{column}{.48\textwidth}
+
+\textbf{1/19/09 Statement, But Still Vague}
+
+\vspace{2mm}
+
+FSA provided additional clarification, in the context of a counter cyclical regime:
+
+\begin{itemize}
+\item Expected participating banks to have minimum core Tier 1 of 4\%
+\item At time of recapitalization, Tier 1 ratio of 8\% used to determine appropriate level of buffer
+\item ``Estimate 6-7\% to be comparable post stress to Tier 1 number to the core Tier 1 at 4\%''
+\item Emphasized the tests were existing part of the supervisory framework, ``not a new set of rules'' 
+\end{itemize}
+
+To ensure implementation of Basel would not create any unnecessary or unintended procyclical effects, FSA reduced the requirement for additional capital from the procyclical effect by changing variable scalar method of converting internal credit risk models.\footnotemark
+
+
+\end{column}%
+\hfill%
+\begin{column}{.48\textwidth}
+
+\textbf{So where did information come from?}
+
+\vspace{2mm}
+
+Answer: \textit{Financial Times} sources, usually
+
+\begin{itemize}
+\item There was no formal or consistent information published about the stress tests (until May, but unexpected)
+\item After Lloyds and RBS, attention shifted to Barclays
+\item Results effectively released via the \textit{FT}:
+\end{itemize}
+
+\begin{quote}
+``The Financial Times has learnt that the FSA will conclude its detailed trawl through the bank’s books in the next few days and it has indicated that Barclays does not need any fresh capital.'' \normalfont{(3/27/09)}
+\end{quote}
+
+By ``passing'' Barclays, the FSA indicated it had confidence Barclays would maintain core Tier 1 capital of 4\% without taxpayer help via government's insurance scheme for toxic assets.
+
+
+\end{column}%
+\end{columns}
+\footnotetext[1]{Changed from point-in-time to through-the-cycle} 
+}
+
+
+
+
+
+
+
+\frame{\frametitle{May 2009: Some Disclosures}
+\begin{columns}[T] % align columns
+\begin{column}{.48\textwidth}
+
+\textbf{Before May 28}
+
+\vspace{2mm}
+
+US results released on May 7 $\rightarrow$ stark contrast with UK disclosure approach
+
+\vspace{2mm}
+
+Unclear which banks had been tested, and which had passed. Barclays had passed\footnotemark, but no word on RBS and Lloyds
+
+\vspace{2mm}
+
+HM Treasury rejected Freedom of Information request for the results on May 20
+
+\vspace{2mm}
+
+Rumors: test scenarios of 50\% fall in home prices, 16\%(!) fall in GDP\footnotemark 
+
+\vspace{2mm}
+
+Why not disclose? 
+\begin{itemize}
+\item Difficult to explain differences with US approach
+\item Because observers might see the stress scenarios as an official forecast (and rumors suggested particularly gloomy scenarios)
+\end{itemize}
+
+\end{column}%
+\hfill%
+\begin{column}{.48\textwidth}
+
+\textbf{May 28 Disclosures}
+
+\vspace{2mm}
+
+FSA released a more detailed note describing the test methodology, but no results. Main points:
+\begin{itemize}
+\item ``The UK authorities have not applied stress testing in the same way as in the US''
+\item  Broadly parsed as an ``integral element'' of the regular supervisory approach
+\item Provided some numbers behind their scenarios $\rightarrow$ turned out to be less stressful than rumors suggested
+\end{itemize}
+\begin{quote}
+``Since the FSA’s tests are embedded in their regular, \textbf{routine supervisory processes the FSA will not, as a matter of practice, be publishing details of the stress test results}.'' \normalfont{[Emphasis added]}
+\end{quote}
+
+\end{column}%
+\end{columns}
+\footnotetext[2]{Known via the \textit{FT}} 
+\footnotetext[3]{US ultimately had 4.2\% drop in GDP peak to trough; UK 4.9\% } 
+}
+
+
+
+\frame{\frametitle{Comparing ``Crisis Intervention'' Stress Tests}
+%\includegraphics[width=\textwidth]{universe}
+ \begin{figure}[t]
+  \centering
+    \includegraphics[width=\textwidth]{Table.pdf}
+    %\includegraphics[scale=.475 ]{Table.pdf}
+    
+\end{figure}
+
+}
+
+
+
+
+\end{document}
+
+
